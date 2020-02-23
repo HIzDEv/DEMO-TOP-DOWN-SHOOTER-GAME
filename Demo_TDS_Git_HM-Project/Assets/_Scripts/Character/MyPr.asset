@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96e42ac9a1ffd04ca9da3eb2c842fb4, type: 3}
+  m_Name: MyPr
+  m_EditorClassIdentifier: 
+  GrenadePrefab: {fileID: 1161984210610610907, guid: 2e2ed14858cbdc948a4ad96fa59dde62,
+    type: 3}
+  Casingbullet: {fileID: 1014995767870230301, guid: f651ed19516db304fa13aa5f192dc7cd,
+    type: 3}
+  bullet: {fileID: 1014995767870230301, guid: f651ed19516db304fa13aa5f192dc7cd, type: 3}
+  HealPs: {fileID: 1202522996400206, guid: f87e7926fd589094b8a269e14b8bea5e, type: 3}
+  ReloadingSound: {fileID: 8300000, guid: 28bd4eae2a2df034db21c32befb0655a, type: 3}
+  pickup: {fileID: 8300000, guid: f859fd94d4644c343ae1f9f8bcb3e1ba, type: 3}
+  ShootingClip: {fileID: 8300000, guid: 861db0c78d342474696698f448460ac8, type: 3}
+  healClip: {fileID: 8300000, guid: f9bd7efc78af9e74dba88b1d392ef783, type: 3}
+  FootStepsClip: {fileID: 8300000, guid: ec3cb640f108b064c8b4687c69e489a1, type: 3}
