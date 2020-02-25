@@ -32,8 +32,15 @@ namespace HM
         private void Update()
         {
             Reloading = Input.GetKey(Reload_Key);//Boutton Reload activer
+
+            if (Input.GetKeyDown(Grenade_Key))//Boutton Grenade activer & hold 
+            {
+                Grenade = true;
+            }else if (Input.GetKeyUp(Grenade_Key))
+            {
+                Grenade = false;
+            }
             
-            Grenade = Input.GetKey(Grenade_Key); //Boutton Grenade activer
 
 
             heal = Input.GetKey(Healing_Key); //Boutton Heal activer

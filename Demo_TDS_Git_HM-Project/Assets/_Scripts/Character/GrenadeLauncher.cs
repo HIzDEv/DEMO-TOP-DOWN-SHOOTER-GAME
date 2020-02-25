@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HM;
 
 public class GrenadeLauncher : MonoBehaviour {
 
 
     public Rigidbody ball;
-    public Transform target;
+    private Transform target;
+    public New_Character_Controller NCC;
 
     public float h = 4;//hauteur 
     public float gravity = -15;
@@ -16,13 +18,15 @@ public class GrenadeLauncher : MonoBehaviour {
     void Start()
     {
         ball.useGravity = false;
+        NCC.gameObject.GetComponentInParent<New_Character_Controller>();
+        target = NCC.GreandeZone;
     }
 
     void Update()
     {
-
+        target = NCC.GreandeZone;
         if (debugPath && target != null)
-        {
+        {            
             DrawPath();
         }
     }

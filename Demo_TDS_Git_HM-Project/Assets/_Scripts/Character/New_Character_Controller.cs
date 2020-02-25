@@ -8,7 +8,8 @@ public class New_Character_Controller : MonoBehaviour
     
     public float MoveSpeed=5f;
     Vector3 MousePosition;
-    RaycastHit hit;
+    public RaycastHit hit;
+    public LayerMask Mask;
 
     //Firing¨Param
     #region shooting
@@ -22,7 +23,7 @@ public class New_Character_Controller : MonoBehaviour
     //Paramaitre de lancement de Grenade
     private float ThrowGrenadeRate = 5;
     private float nextTimeToThrowGrenade = 0;
-    
+    public Transform GreandeZone;
     #endregion
 
     #region movement        
@@ -81,9 +82,9 @@ public class New_Character_Controller : MonoBehaviour
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, 100))
+        if (Physics.Raycast(ray, out hit, 100, Mask))
         {
-
+            
             FaceTarget(hit.point);
 
         }
@@ -101,16 +102,31 @@ public class New_Character_Controller : MonoBehaviour
     void Grenade()
     {
         //tester si le lancement de grenade est possible et lancer l'animation si oui
-        if (Input_manager.Grenade && PLayer_Stats.ThrowedGrened==null && !PLayer_Stats.Anim.GetBool("Reloading"))
+        if (Input_manager.Grenade)
         {
-            if (playermanager.GrenadeInv > 0)
+            if (!GreandeZone.gameObject.activeSelf)
             {
+                GreandeZone.gameObject.SetActive(true);
+            }
+            GreandeZone.position = hit.point;
 
-                PLayer_Stats.Grenade_Zone = hit.transform;
-                PLayer_Stats.Anim.SetBool("Grenade", true);//Activer l'animation
-                Input_manager.Grenade = true;
+            if (PLayer_Stats.ThrowedGrened == null && !PLayer_Stats.Anim.GetBool("Reloading"))
+                {
+                
+                if (playermanager.GrenadeInv > 0)
+                {
+                    PLayer_Stats.Anim.SetBool("Grenade", true);//Activer l'animation
+                    Input_manager.Grenade = true;
+                }
             }
         }
+        else
+        {
+            GreandeZone.gameObject.SetActive(false);
+            PLayer_Stats.Anim.SetBool("Grenade", false);
+        }
+
+        
 
     }
     void Reloading()

@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{59C9289F-DBCC-1D7D-0B73-EECA5800659E}</ProjectGuid>
+    <ProjectGuid>{65BC47AF-F277-BC6D-B380-27C28E06979B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -88,6 +88,7 @@
     <Compile Include="Assets\_Scripts\AI\State.cs" />
     <Compile Include="Assets\_Scripts\AI\StateController.cs" />
     <Compile Include="Assets\_Scripts\AI\Transition.cs" />
+    <Compile Include="Assets\_Scripts\CameraObstaclesFade.cs" />
     <Compile Include="Assets\_Scripts\Character\Character_Controller.cs" />
     <Compile Include="Assets\_Scripts\Character\Events.cs" />
     <Compile Include="Assets\_Scripts\Character\Exploid.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\_Scripts\MainMenu.cs" />
     <Compile Include="Assets\_Scripts\Prefabs\Bullet.cs" />
     <Compile Include="Assets\_Scripts\Prefabs\CameraShake.cs" />
+    <Compile Include="Assets\_Scripts\Prefabs\FadeController.cs" />
     <Compile Include="Assets\_Scripts\Tps_Camera.cs" />
     <None Include="Assets\Packs\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
     <None Include="Assets\Packs\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
@@ -119,31 +121,31 @@
     <None Include="Assets\Packs\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
     <None Include="Assets\Packs\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/ProgrameFiles/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

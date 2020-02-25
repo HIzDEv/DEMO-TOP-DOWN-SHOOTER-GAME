@@ -24,7 +24,7 @@ namespace HM
             PM.GrenadeInv-=1;
             PM.updateAmmo();
             Input_manager.Grenade = false;
-            PLayer_Stats.Anim.SetBool("Grenade", false);
+           
         }
 
 
@@ -66,6 +66,7 @@ namespace HM
             {
                 PLayer_Stats.ThrowedGrened = Instantiate(PLayer_Stats.GrenadePrefab, PLayer_Stats.handAttachGrenade.position, PLayer_Stats.handAttachGrenade.localRotation);
                 PLayer_Stats.ThrowedGrened.transform.parent = PLayer_Stats.handAttachGrenade.transform;
+                PLayer_Stats.ThrowedGrened.GetComponent<GrenadeLauncher>().NCC = GetComponent<New_Character_Controller>();
             }    
           }
 
@@ -81,7 +82,7 @@ namespace HM
 
             
                 
-                Gl.target = PLayer_Stats.Grenade_Zone;
+               // Gl.target = PLayer_Stats.Grenade_Zone;
                 Gl.Launch();
                 PLayer_Stats.ThrowedGrened.AddComponent<CapsuleCollider>();
 

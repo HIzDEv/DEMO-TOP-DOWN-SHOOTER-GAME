@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9633D0CC-7BF2-50E6-C2D3-9C6177CBFEA5}</ProjectGuid>
+    <ProjectGuid>{DC098C39-4C6D-023D-54A3-A62B3167B588}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -65,37 +65,37 @@
     <Compile Include="Assets\Packs\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
     <Compile Include="Assets\Packs\JMO Assets\WarFX\Editor\CFX_SpawnSystemEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/ProgrameFiles/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -290,7 +290,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>E:/GitProject/DEMO_HM_TPS/Demo_TPS_Git_HM-Project/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>E:/GitProject/DEMO_HM_TDS/DEMO-TOP-DOWN-SHOOTER-GAME/Demo_TDS_Git_HM-Project/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>E:/ProgrameFiles/2019.3.0f6/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -649,7 +649,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{59C9289F-DBCC-1D7D-0B73-EECA5800659E}</Project>
+      <Project>{65BC47AF-F277-BC6D-B380-27C28E06979B}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>
