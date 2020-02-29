@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b67076971525c4d820d1946576cb90, type: 3}
   m_Name: PnjStats
   m_EditorClassIdentifier: 
+  Type: 2
   moveSpeed: 0.85
   lookRange: 25
   lookSphereCastRadius: 1
@@ -22,3 +23,5 @@ MonoBehaviour:
     type: 3}
   DeathSound: {fileID: 8300000, guid: a75d441c98c1a774e9fa89e3625f4357, type: 3}
   ShootSound: {fileID: 8300000, guid: 861db0c78d342474696698f448460ac8, type: 3}
+  DistanceFromTarget: 4
+  MaxHealh: 200

@@ -7,6 +7,7 @@ TagManager:
   - NPC
   - AmmoPack
   - HealthKit
+  - FX
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - YuME_TileMap
   - Player
   - Ground
-  - 
-  - 
+  - PP
+  - NPC
   - 
   - 
   - 

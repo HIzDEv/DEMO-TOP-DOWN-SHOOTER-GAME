@@ -10,6 +10,7 @@ public class New_Character_Controller : MonoBehaviour
     Vector3 MousePosition;
     public RaycastHit hit;
     public LayerMask Mask;
+    public Transform Crosshair3D;
 
     //Firing¨Param
     #region shooting
@@ -52,7 +53,11 @@ public class New_Character_Controller : MonoBehaviour
         Init(MyPR);
     }
 
-   
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -92,7 +97,7 @@ public class New_Character_Controller : MonoBehaviour
 
     void FaceTarget(Vector3 targetPos)
     {
-
+        Crosshair3D.position = targetPos;
 
         Vector3 direction = (targetPos - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));

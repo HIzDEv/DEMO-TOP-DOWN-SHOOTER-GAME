@@ -25,8 +25,8 @@ namespace HM
         //Delai écoulé
         [HideInInspector] public float stateTimeElapsed;
 
-        [Header("")]
-        
+        [Header("Attacking")]
+        public float CurrentAttackRate;
         //différent composonts et Préfabs 
         [HideInInspector] public Animator anim;
         [HideInInspector] public AudioSource Audio;
@@ -34,6 +34,8 @@ namespace HM
          public Image HeathBarre;
          public Transform boucheCanon;
          public ParticleSystem Muzzle;
+        [Header("Damage")]
+        public DisplayDamageText DDT;
         
 
         [HideInInspector] public NavMeshAgent navMeshAgent;
@@ -104,11 +106,14 @@ namespace HM
             Healh -= value;
 
             HeathBarre.fillAmount = Healh / Pnj.MaxHealh;
+            DDT.ShowDText(value);
+
         }
 
         public void Shooting()
         {
-            
+            if (CurrentAttackRate < Pnj.attackRate)
+                CurrentAttackRate = Pnj.attackRate;
 
             GameObject Bullet = Instantiate(Pnj.prefabs_Impact, boucheCanon.position, boucheCanon.localRotation) as GameObject;
 

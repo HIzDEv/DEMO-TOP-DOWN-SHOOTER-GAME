@@ -8,6 +8,8 @@ namespace HM
     [CreateAssetMenu(menuName = "PluggableAI/Actions/Attack")]
     public class AttackAction : Action
     {
+        
+
         public override void Act(StateController controller)
         {
             Attack(controller);
@@ -23,22 +25,30 @@ namespace HM
             //NPC vise le joueur (change sa rotation par rapport au joueur)
             controller.transform.LookAt(controller.chaseTarget);
 
-            
-            if (Physics.SphereCast(controller.eyes.position, controller.Pnj.lookSphereCastRadius, controller.eyes.forward, out hit, controller.Pnj.attackRange)
-                && hit.collider.CompareTag("Player"))      
+            if (controller.Pnj.Type == PnjStats.Npc_Type.Melee)
             {
-                //vérifier si le joueur est dans le champs de vision de l'NPC
-                
-                if (controller.CheckIfCountDownElapsed(controller.Pnj.attackRate))
-                {
-                    controller.Shooting();
+                controller.navMeshAgent.isStopped = true;
+            }
+            else
+            {
 
-                    //Activer le son et réinitialiser le temps du prochaine attack
-                    controller.stateTimeElapsed = 0;
+                if (Physics.SphereCast(controller.eyes.position, controller.Pnj.lookSphereCastRadius, controller.eyes.forward, out hit, controller.Pnj.attackRange)
+                    && hit.collider.CompareTag("Player"))
+                {
+                    //vérifier si le joueur est dans le champs de vision de l'NPC
+
+                    if (controller.CheckIfCountDownElapsed(controller.CurrentAttackRate))
+                    {
+                        controller.Shooting();
+
+                        //Activer le son et réinitialiser le temps du prochaine attack
+                        controller.stateTimeElapsed = 0;
+                    }
+
+
                 }
-                
-    
-        }
+            }
+            
         }
     }
 }

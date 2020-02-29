@@ -12,6 +12,7 @@ namespace HM
         public float heathLvl;
         public Image HeathBarre;
         public CameraShake Cshake;
+        public DisplayDamageText DDT;
         #endregion
 
         #region ScoreVaribales
@@ -42,7 +43,7 @@ namespace HM
         {
             heathLvl = PLayer_Stats.maxHealth;
             ScroreBarre.fillAmount = 0;
-
+            
         }
 
 
@@ -122,10 +123,14 @@ namespace HM
             heathLvl -= value;
             HeathBarre.fillAmount = heathLvl / PLayer_Stats.maxHealth ;
 
+            DDT.ShowDText((int)value);
+
             if (heathLvl <= 0)
             {
                 PLayer_Stats.Anim.SetTrigger("Die");
             }
+
+
         }
 
         //Soigne le joueur

@@ -17,7 +17,9 @@ namespace HM
 
         public float Radius = 5f;//Rayon d'explosion
         public float explosiveForce;//force d'explosion
-                                   
+
+        bool Exploided;
+
 
 
         // Update is called once per frame
@@ -32,11 +34,14 @@ namespace HM
             //Commener le Timer et exploser la bombe 
             if (timer > 0)
             {
+                Exploided = false;
+
                 timer -= Time.deltaTime;
 
             }
             else
             {
+                
                 exploid();
 
             }
@@ -57,6 +62,8 @@ namespace HM
 
                 }
             }
+
+            Exploided = true;
         }
 
         void exploid()
@@ -64,10 +71,11 @@ namespace HM
 
             GetComponentInChildren<SkinnedMeshRenderer>().enabled = false;
             ExplodingPs.SetActive(true); //Activer Le PS
-                                         
-            makeDamage(); //Creer l'impact
 
-            Destroy(gameObject, 2f);//Détruire l'objet aprés 3sc
+                     if(!Exploided)                    
+                        makeDamage(); //Creer l'impact
+
+            Destroy(gameObject, 2.5f);//Détruire l'objet aprés 3sc
         }
     }
 }

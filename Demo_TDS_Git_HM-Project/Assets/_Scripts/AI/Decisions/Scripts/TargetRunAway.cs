@@ -19,6 +19,7 @@ namespace HM
             }
             else
             {
+                
                 controller.navMeshAgent.isStopped = true;
                 controller.anim.SetBool("Attack", true);
                 controller.anim.SetBool("Walking", false);

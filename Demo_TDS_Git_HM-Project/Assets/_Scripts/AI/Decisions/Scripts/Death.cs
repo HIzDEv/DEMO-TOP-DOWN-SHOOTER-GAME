@@ -15,8 +15,12 @@ namespace HM
                 //activier l'animation (death) et arréter le navmesh agent
                 controller.anim.SetTrigger("death");
 
-                controller.navMeshAgent.isStopped = true;
-
+                controller.navMeshAgent.enabled = false;
+                controller.GetComponent<CapsuleCollider>().enabled = false;
+                if (controller.Pnj.Type == PnjStats.Npc_Type.Melee)
+                {
+                    controller.GetComponentInChildren<MeleeAxe>().gameObject.SetActive(false);
+                }
                 //activer le son
                 #region ActiveAudio
                 controller.Audio.clip = controller.Pnj.DeathSound;

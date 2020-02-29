@@ -13,9 +13,14 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
+
+
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerManager>().GetHit(5);
+
+             int RandomDamage = Random.Range(5, 10);
+            collision.gameObject.GetComponent<PlayerManager>().GetHit(RandomDamage);
             collision.gameObject.GetComponent<AudioSource>().volume = 1f;
             collision.gameObject.GetComponent<AudioSource>().PlayOneShot(ImpactSound);
             
@@ -24,7 +29,10 @@ public class Bullet : MonoBehaviour
         }
         else if(collision.gameObject.tag == "NPC")
         {
-            collision.gameObject.GetComponent<StateController>().GetHit(25, ShooterTransform);
+
+            int RandomDamage = Random.Range(25, 45);
+
+            collision.gameObject.GetComponent<StateController>().GetHit(RandomDamage, ShooterTransform);
             collision.gameObject.GetComponent<AudioSource>().volume = 1f;
             collision.gameObject.GetComponent<AudioSource>().PlayOneShot(ImpactSound);
         }
